@@ -1,0 +1,36 @@
+--- config.defa.h	2025-07-28 01:46:42.918384812 +0200
++++ config.def.h	2025-07-28 01:30:22.091364826 +0200
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char *font = "Liberation Mono:pixelsize=18:antialias=true:autohint=true";
++static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+ static int borderpx = 2;
+ 
+ /*
+@@ -16,7 +16,7 @@
+  * 4: value of shell in /etc/passwd
+  * 5: value of shell in config.h
+  */
+-static char *shell = "/bin/fish";
++static char *shell = "/bin/sh";
+ char *utmp = NULL;
+ /* scroll program: to enable use a string like "scroll" */
+ char *scroll = NULL;
+@@ -129,10 +129,10 @@
+  * Default colors (colorname index)
+  * foreground, background, cursor, reverse cursor
+  */
+-unsigned int defaultfg = 0;
+-unsigned int defaultbg = 15;
+-unsigned int defaultcs = 4;
+-static unsigned int defaultrcs = 3;
++unsigned int defaultfg = 258;
++unsigned int defaultbg = 259;
++unsigned int defaultcs = 256;
++static unsigned int defaultrcs = 257;
+ 
+ /*
+  * Default shape of cursor
+
